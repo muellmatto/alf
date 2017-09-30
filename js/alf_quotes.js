@@ -24,6 +24,21 @@ var quotes = [
     'Schnecken - eine Bedrohung für alle von uns, die barfuß gehen.',
     'Wer kriecht kann nicht stolpern.',
     'Wenn ich mehr Zeit hätte, würde ich zwei Armbanduhren tragen!',
-    'Der Wagen schnurrt wie eine Katze! Da fällt mir ein, ich habe Hunger!'
+    'Der Wagen schnurrt wie eine Katze! Da fällt mir ein, ich habe Hunger!',
+    'Das Geheimnis beim Bowling - oder Tallaquoids, wie es im zivilisierten Universum genannt wird - liegt im Reifegrad der Melone.',
+    'Und du hast Gold? Ich hatte Gold, alle Leitungen in meinem Raumschiff waren aus Gold! Nur die Toilette nicht - díe war nämlich aus Platin!',
+    'Es nie zu früh und selten zu spät.',
+    'Hey! Null Problemo! Laßt mir nur den Schlüssel zum Schnapsschränkchen da!',
+    'Keine Panik, ich weiß durchaus nicht, was zu tun ist.',
+    'Sag mal Willie, würde eine Pizza nicht gut zu meiner Zunge passen, ich meine auf farblich?',
+    'Wie mein Glitschballtrainer immer zu sagen pflegte, versuche rauszufinden was du nicht gut kannst,und dann lass es bleiben.',
+    'Es regnet KATZEN? - Mach die Dachfenster auf, ich hol schonmal die Mayonnaise!!!',
+    'Traditionen sind wie Teller: Gemacht, um in Stück zu fallen!',
+    'Ich will allein sein. Komm Brian, leiste mir dabei Gesellschaft.',
+    'Tut nichts, was ich nicht auch tun würde!',
+    'Ich weiss, wie man sowas dezent behandelt. Äh, wo haben wir die Scheinwerfer und die Lautsprecher?',
+    'Meine Herren vom Außerirdischen Einsatzkommando. Retten sie mein Leben und ich biete ihnen dafür ein ungeheures technisches Geheimwissen. z.B. wie programmiere ich einen Videorecorder...',
+    'Keine Sorge, meine bezaubernde Assistentin wird das gleich wegräumen.',
+    'Mir fällt auf, dass du einen Haufen Zeit mit Reparaturen verbringst, Willie.',
+    'Das ist kein Essen, das verfüttert man an das Essen!',
 ];
-
