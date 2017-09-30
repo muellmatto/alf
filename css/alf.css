@@ -1,6 +1,7 @@
 * {
     user-select: none;
     box-sizing: border-box;
+    cursor: default;
 }
 
 body {
@@ -52,4 +53,7 @@ body {
     text-align: center;
     width: 10rem;
     margin: auto;
+}
+.button:active {
+    background-color: #a16533;
 }
