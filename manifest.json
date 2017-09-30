@@ -1,7 +1,7 @@
 {
   "name": "ALF",
   "short_name": "ALF",
-  "start_url": ".",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#a16533",
   "description": " -> ALF <- ",
