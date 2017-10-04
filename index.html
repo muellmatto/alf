@@ -23,10 +23,21 @@
     <body>
         <div class="frame">
             <div class="bg"></div>
-            <div class="head">Null Problemo!</div>
+            <div class="head">ull Problemo! <span onclick="open_menu()">≡</span></div>
             <div class="container">
                 <div id="quote" class="quote"></div>
                 <div class="button" onclick="change_quote()">MEHR MEHR MEHR</div>
+            </div>
+            <div id="menu">
+                <p>Check for an update!</p>
+                <br>
+                <div class="button" onclick="register_sw()">INSTALL</div>
+                <br>
+                <p><a href="https://amselbüro.de" target="_blank" rel="noopener">
+                    (c) Amselbüro Lykkelig
+                </a></p>
+                <br>
+                <div class="button" onclick="close_menu()">CLOSE</div>
             </div>
         </div>
         <script type="text/javascript" src="js/alf_quotes.js"></script>

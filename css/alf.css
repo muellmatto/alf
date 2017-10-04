@@ -31,9 +31,13 @@ body {
 }
 .head {
     margin-left: 0.5rem;
+    margin-right: 0.5rem;
     padding-top: 1rem;
     font-size: 1.4rem;
     color: #a16533;
+}
+.head span {
+    float: right;
 }
 .container {
     position: absolute;
@@ -45,6 +49,18 @@ body {
     font-size: 1rem;
     color: white;
     text-shadow: 0.1rem 0.1rem 0.1rem black;
+    text-align: center;
+}
+#menu {
+    position: absolute;
+    background: rgba(220, 220, 220, 0.8);
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 1rem;
+    top: 1rem;
+    left: 1rem;
+    display: none;
+    padding: 1rem;
     text-align: center;
 }
 .button {
