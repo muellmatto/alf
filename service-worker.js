@@ -6,8 +6,9 @@ var alf_app_files = [
     "/img/apple-touch-icon.png",
     "/img/favicon.ico",
     "/img/favicon-192.png",
-    "/js/alf.js",
+    "/img/favicon-512.png",
     "/js/alf_quotes.js",
+    "/js/alf.js",
     "/css/alf.css",
 ];
 
@@ -36,7 +37,6 @@ self.addEventListener('fetch', function(e) {
  * We need to increment alf_cache_name to remove old cached files...
  */
 
-/*
 self.addEventListener('activate', function(e) {
     console.log('[ServiceWorker] Activate');
     e.waitUntil(
@@ -51,4 +51,3 @@ self.addEventListener('activate', function(e) {
     );
     return self.clients.claim();
 });
-*/
