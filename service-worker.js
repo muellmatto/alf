@@ -1,4 +1,4 @@
-var alf_cache_name = 'alf';
+var alf_cache_name = 'alf-v4';
 var alf_app_files = [
     "/",
     "/index.html",
@@ -13,18 +13,20 @@ var alf_app_files = [
 ];
 
 self.addEventListener('install', function(e) {
-    console.log('[ServiceWorker] Install');
+    console.log('[ServiceWorker] Install: ' + alf_cache_name);
     e.waitUntil(
         caches.open(alf_cache_name).then(function(cache) {
             console.log('[ServiceWorker] Caching alf app');
             return cache.addAll(alf_app_files);
         })
     );
+    self.skipWaiting();
+    console.log('skipped ....')
 });
 
 
 self.addEventListener('fetch', function(e) {
-    console.log('[ServiceWorker] Fetch', e.request.url);
+    console.log('[ServiceWorker] Fetch |' + alf_cache_name, e.request.url);
     e.respondWith(
         caches.match(e.request).then(function(response) {
             return response || fetch(e.request);
@@ -38,7 +40,7 @@ self.addEventListener('fetch', function(e) {
  */
 
 self.addEventListener('activate', function(e) {
-    console.log('[ServiceWorker] Activate');
+    console.log('[ServiceWorker] Activate: ' + alf_cache_name);
     e.waitUntil(
         caches.keys().then(function(keyList) {
             return Promise.all(keyList.map(function(key) {

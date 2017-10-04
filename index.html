@@ -23,7 +23,7 @@
     <body>
         <div class="frame">
             <div class="bg"></div>
-            <div class="head">ull Problemo! <span onclick="open_menu()">≡</span></div>
+            <div class="head">Null Problemo!<span onclick="open_menu()">≡</span></div>
             <div class="container">
                 <div id="quote" class="quote"></div>
                 <div class="button" onclick="change_quote()">MEHR MEHR MEHR</div>
@@ -31,10 +31,13 @@
             <div id="menu">
                 <p>Check for an update!</p>
                 <br>
-                <div class="button" onclick="register_sw()">INSTALL</div>
+                <div id="install_button" class="button" onclick="register_sw()">INSTALL</div>
                 <br>
-                <p><a href="https://amselbüro.de" target="_blank" rel="noopener">
-                    (c) Amselbüro Lykkelig
+                <div id="uninstall_button" class="button" onclick="unregister_sw()">UNINSTALL</div>
+                <br>
+                <p>
+                    made with ❤️ by<a href="https://amselbüro.de" target="_blank" rel="noopener">
+                    Amselbüro Lykkelig
                 </a></p>
                 <br>
                 <div class="button" onclick="close_menu()">CLOSE</div>

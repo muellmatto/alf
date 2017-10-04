@@ -76,3 +76,6 @@ body {
 .button:active {
     background-color: #a16533;
 }
+#uninstall_button {
+    display: none;
+}
