@@ -71,17 +71,21 @@ function change_quote() {
 change_quote();
 function set_installed() {
     document.getElementById('uninstall_button').style.display = 'block';
+    document.getElementById('notify_button').style.display = 'block';
     document.getElementById('install_button').innerHTML = 'UPDATE';
 }
 function set_uninstalled() {
     document.getElementById('uninstall_button').style.display = 'none';
+    document.getElementById('notify_button').style.display = 'none';
     document.getElementById('install_button').innerHTML = 'INSTALL';
 }
 if (navigator.serviceWorker.controller) {
     set_installed();
 }
 function start_notify() {
+    document.getElementById('menu').style.display = 'none';
+    alert("Du darft den tap / die app nicht schließen")
     var delay = 24 * 60 * 60 * 1000;
-    setTimeout(function(){var oi = setInterval(function(){console.log('oi');},60000);},600000);
+    setTimeout(function(){setInterval(function(){alf_notify();},60000);},60000);
 }
 
