@@ -53,3 +53,12 @@ self.addEventListener('activate', function(e) {
     );
     return self.clients.claim();
 });
+
+
+
+self.addEventListener(
+    'sync',
+    function(event) {
+        event.waitUntil( console.log (event.tag) )
+    }
+);

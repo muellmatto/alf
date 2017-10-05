@@ -1,13 +1,18 @@
-'use strict';
+    'use strict';
 
 function register_sw() {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('./service-worker.js')
-            .then(function(servive_worker_registration) { 
+            .then(function(service_worker_registration) { 
                 console.log('Service Worker Registered'); 
-                servive_worker_registration.update();
-                });
+                service_worker_registration.update();
+                show_notification('ALF installed!', 
+                    {
+                        "body": quotes[Math.floor(Math.random()*quotes.length)]
+                    }
+                )
+            });
         set_installed();
     } else {
         alert('sorry :( not working in your webbrowser')
@@ -26,6 +31,30 @@ function unregister_sw() {
         });
     set_uninstalled();
     }
+}
+/*
+				{
+				body: 'Buzz! Buzz!',
+				icon: '../images/touch/chrome-touch-icon-192x192.png',
+				vibrate: [200, 100, 200, 100, 200, 100, 200],
+				tag: 'vibration-sample'
+				}
+*/
+function show_notification(title='Hello from ALF', options={}) {
+	Notification.requestPermission(function(result) {
+		if (result === 'granted') {
+			navigator.serviceWorker.ready.then(function(registration) {
+				registration.showNotification(title,options);
+			});
+		}
+	});
+}
+function alf_notify() {
+    show_notification('ALF', 
+        {
+            "body": quotes[Math.floor(Math.random()*quotes.length)]
+        }
+    );
 }
 function close_menu() {
     document.getElementById('menu').style.display = 'none';
@@ -51,3 +80,8 @@ function set_uninstalled() {
 if (navigator.serviceWorker.controller) {
     set_installed();
 }
+function start_notify() {
+    var delay = 24 * 60 * 60 * 1000;
+    setTimeout(function(){var oi = setInterval(function(){console.log('oi');},60000);},600000);
+}
+
